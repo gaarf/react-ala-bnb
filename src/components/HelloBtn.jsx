@@ -18,7 +18,7 @@ HelloBtn.propTypes = {
 
 export default withStyles(() => ({
   btn: {
-    fontSize: '2em',
+    fontSize: '3em',
     margin: 1,
     padding: `.2em 1em`,
     ':hover': {

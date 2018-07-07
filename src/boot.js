@@ -1,15 +1,9 @@
-import { createElement } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import { hot } from 'react-hot-loader';
-import { Provider } from 'react-redux';
-import 'sanitize.css';
-import './layout.css';
-import store from './store';
-import Routes from './routes';
-
-const App = () => createElement(Provider, { store }, createElement(Routes));
+import App from './App';
 
 ReactDOM.render(
-  createElement(hot(module)(App)),
+  React.createElement(hot(module)(App)),
   document.getElementById('root'),
 );
