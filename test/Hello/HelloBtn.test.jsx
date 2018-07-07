@@ -1,12 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from '../src/containers/App';
+import HelloBtn from '../../src/components/HelloBtn';
 
-describe('App', () => {
+describe('HelloBtn', () => {
   let ctnr;
 
   beforeEach(() => {
-    ctnr = shallow(<App />);
+    ctnr = shallow(<HelloBtn onClick={jest.fn()}>hi</HelloBtn>);
   });
 
   it('looks alright', () => {

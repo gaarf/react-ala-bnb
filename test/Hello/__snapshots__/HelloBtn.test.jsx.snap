@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HelloBtn looks alright 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <withStyles(HelloBtn)
+    onClick={[MockFunction]}
+  >
+    hi
+  </withStyles(HelloBtn)>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": "hi",
+      "css": [Function],
+      "onClick": [MockFunction],
+      "styles": Object {
+        "btn": Object {
+          "_definition": Object {
+            ":hover": Object {
+              "backgroundColor": "orange",
+            },
+            "fontSize": "2em",
+            "margin": 1,
+            "padding": ".2em 1em",
+          },
+          "_len": 88,
+          "_name": "btn_1hafu8j",
+        },
+      },
+      "theme": Object {
+        "color": Object {
+          "primary": "#FF5A5F",
+          "secondary": "#00A699",
+        },
+      },
+    },
+    "ref": null,
+    "rendered": "hi",
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": "hi",
+        "css": [Function],
+        "onClick": [MockFunction],
+        "styles": Object {
+          "btn": Object {
+            "_definition": Object {
+              ":hover": Object {
+                "backgroundColor": "orange",
+              },
+              "fontSize": "2em",
+              "margin": 1,
+              "padding": ".2em 1em",
+            },
+            "_len": 88,
+            "_name": "btn_1hafu8j",
+          },
+        },
+        "theme": Object {
+          "color": Object {
+            "primary": "#FF5A5F",
+            "secondary": "#00A699",
+          },
+        },
+      },
+      "ref": null,
+      "rendered": "hi",
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
