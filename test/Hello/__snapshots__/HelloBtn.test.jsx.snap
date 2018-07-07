@@ -30,12 +30,12 @@ ShallowWrapper {
             ":hover": Object {
               "backgroundColor": "orange",
             },
-            "fontSize": "2em",
+            "fontSize": "3em",
             "margin": 1,
             "padding": ".2em 1em",
           },
           "_len": 88,
-          "_name": "btn_1hafu8j",
+          "_name": "btn_1w0oilu",
         },
       },
       "theme": Object {
@@ -64,12 +64,12 @@ ShallowWrapper {
               ":hover": Object {
                 "backgroundColor": "orange",
               },
-              "fontSize": "2em",
+              "fontSize": "3em",
               "margin": 1,
               "padding": ".2em 1em",
             },
             "_len": 88,
-            "_name": "btn_1hafu8j",
+            "_name": "btn_1w0oilu",
           },
         },
         "theme": Object {
