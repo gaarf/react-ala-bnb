@@ -11,4 +11,6 @@ ThemedStyleSheet.registerTheme({
 
 ThemedStyleSheet.registerInterface(aphroditeInterface);
 
+export interface WithStylesPropTypes {}
+
 export { css, withStyles, withStylesPropTypes, ThemedStyleSheet };

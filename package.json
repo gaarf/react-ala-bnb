@@ -12,8 +12,8 @@
     "build": "cross-env NODE_ENV=production webpack -p",
     "test": "jest --coverage",
     "watch": "jest --watchAll",
-    "lint": "eslint \"{src,test}/**/*.{js,jsx}\"",
-    "prettier": "prettier --write \"{src,test}/**/*.{js,jsx,css}\""
+    "lint": "eslint \"{src,test}/**/*.[jt]sx?\"",
+    "prettier": "prettier --write \"{src,test}/**/*.{jsx,tsx,js,ts,css}\""
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./test/setup.js",

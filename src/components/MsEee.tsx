@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles, css, withStylesPropTypes } from '../helpers/withStyles';
+import {
+  withStyles,
+  css,
+  withStylesPropTypes,
+  WithStylesPropTypes,
+} from '../helpers/withStyles';
 
-function MsEee({ styles }) {
-  return (
-    <div {...css(styles.yay)}>
-      Embrace, Extend, Extinguish
-    </div>
-  );
-}
+const MsEee: React.SFC<WithStylesPropTypes> = ({ styles }) => {
+  return <div {...css(styles.yay)}>Embrace, Extend, Extinguish</div>;
+};
 
 MsEee.propTypes = {
   ...withStylesPropTypes,
