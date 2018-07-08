@@ -12,5 +12,10 @@
     "prettier/prettier": 1,
     "react/jsx-one-expression-per-line": 0,
     "react/destructuring-assignment": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "eslint-import-resolver-typescript": [".ts", ".tsx"]
+    }
   }
 }
