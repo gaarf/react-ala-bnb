@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import HelloBtn from '../../components/HelloBtn';
+import MsEee from '../../components/MsEee';
 import { incrementClick, decrementClick } from '../../helpers/actions';
 
 class HelloContainer extends React.PureComponent {
@@ -27,6 +28,7 @@ class HelloContainer extends React.PureComponent {
         <h1>Hello world! clicks={clicks}</h1>
         <HelloBtn onClick={this.handleClickUp}>&uarr;</HelloBtn>
         <HelloBtn onClick={this.handleClickDown}>&darr;</HelloBtn>
+        <MsEee />
       </>
     );
   }

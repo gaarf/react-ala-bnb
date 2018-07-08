@@ -30,7 +30,7 @@ const store = createStore(
       LOG && console.info('dispatching', action);
       const result = next(action);
       LOG && console.log('next state', store.getState());
-      LOG && console.groupEnd(action.type);
+      LOG && console.groupEnd();
       return result;
     },
   ),

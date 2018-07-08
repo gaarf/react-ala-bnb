@@ -6,6 +6,7 @@ module.exports = function babelConfig(api) {
   api.cache(false);
 
   const presets = [
+    '@babel/preset-typescript',
     '@babel/preset-react',
     [
       '@babel/preset-env',
