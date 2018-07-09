@@ -20,8 +20,20 @@
     "moduleNameMapper": {
       "\\.css$": "identity-obj-proxy"
     },
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest",
+      "^.+\\.jsx?$": "babel-jest"
+    },
     "collectCoverageFrom": [
-      "src/{components,containers}/**/*.{js,jsx}"
+      "src/{components,containers}/**/*.{jsx,tsx,js,ts}"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
     ],
     "verbose": true
   },
@@ -52,6 +64,7 @@
     "@babel/preset-env": "^7.0.0-beta.51",
     "@babel/preset-react": "^7.0.0-beta.51",
     "@babel/preset-typescript": "^7.0.0-beta.52",
+    "@types/jest": "^23.1.4",
     "@types/prop-types": "^15.5.3",
     "@types/react": "^16.4.6",
     "@types/react-dom": "^16.0.6",
@@ -59,6 +72,7 @@
     "@types/react-router-dom": "^4.2.7",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^8.2.5",
+    "babel-jest": "^23.2.0",
     "babel-loader": "^8.0.0-beta",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
     "cross-env": "^5.2.0",
@@ -81,6 +95,7 @@
     "prettier": "1.13.7",
     "raf": "^3.4.0",
     "style-loader": "^0.21.0",
+    "ts-jest": "^23.0.0",
     "typescript": "^2.9.2",
     "typescript-eslint-parser": "^16.0.1",
     "webpack": "^4.14.0",

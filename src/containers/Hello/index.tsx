@@ -3,11 +3,21 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import HelloBtn from '../../components/HelloBtn';
 import MsEee from '../../components/MsEee';
-import { incrementClick, decrementClick } from '../../helpers/actions';
+import { incrementClick, decrementClick } from '../../store/hello';
+import { RootState } from '../../store';
 
-class HelloContainer extends React.PureComponent {
+export interface PropsFromState {
+  count: number;
+}
+
+export interface PropsFromDispatch {
+  incrementClick: () => void;
+  decrementClick: () => void;
+}
+
+class HelloContainer extends React.Component<PropsFromState & PropsFromDispatch> {
   static propTypes = {
-    clicks: PropTypes.number.isRequired,
+    count: PropTypes.number.isRequired,
     incrementClick: PropTypes.func.isRequired,
     decrementClick: PropTypes.func.isRequired,
   };
@@ -21,11 +31,11 @@ class HelloContainer extends React.PureComponent {
   };
 
   render() {
-    const { clicks } = this.props;
+    const { count } = this.props;
 
     return (
       <>
-        <h1>Hello world! clicks={clicks}</h1>
+        <h1>Hello world! clicks={count}</h1>
         <HelloBtn onClick={this.handleClickUp}>&uarr;</HelloBtn>
         <HelloBtn onClick={this.handleClickDown}>&darr;</HelloBtn>
         <MsEee />
@@ -34,9 +44,9 @@ class HelloContainer extends React.PureComponent {
   }
 }
 
-export default connect(
-  state => ({
-    clicks: state.hello.clicks,
+export default connect<PropsFromState, PropsFromDispatch>(
+  (s: RootState) => ({
+    count: s.hello.clicks,
   }),
   {
     incrementClick,

@@ -25,6 +25,7 @@
       "rules": {
         "no-undef": "off",
         "no-unused-vars": "off",
+        "no-multi-str": "off",
         "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }]
       }
     }
