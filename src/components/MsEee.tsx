@@ -14,8 +14,9 @@ MsEee.propTypes = {
   ...withStylesPropTypes,
 };
 
-export default withStyles(() => ({
+export default withStyles(({unit = 1}) => ({
   yay: {
     fontSize: '3em',
+    padding: unit * 10
   },
 }))(MsEee);

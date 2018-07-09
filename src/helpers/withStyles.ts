@@ -7,6 +7,7 @@ ThemedStyleSheet.registerTheme({
     primary: '#FF5A5F',
     secondary: '#00A699',
   },
+  unit: 8
 });
 
 ThemedStyleSheet.registerInterface(aphroditeInterface);
