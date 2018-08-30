@@ -3,13 +3,12 @@ import '../layout.css';
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from '../store';
-// import HelloContainer from './Hello';
-import TimeIsAnIllusion from './TimeIsAnIllusion';
+import SnakeGame from './SnakeGame';
 
 export default function App() {
   return (
     <Provider store={store}>
-      <TimeIsAnIllusion />
+      <SnakeGame />
     </Provider>
   );
 }
